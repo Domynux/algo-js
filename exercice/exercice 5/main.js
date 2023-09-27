@@ -1,14 +1,15 @@
-var a =3
-while (a<9){
-   console.log(a)
-    a++
+var a = "Jean"
+var b = "Paul" 
+var vrai = "Nom similaire "
+var faux = "Nom différent"
+var result = checkName(a,b) 
+
+function checkName( nom1 ,nom2 ) {
+    if (nom1 === nom2) {
+        return vrai
+    } else {
+        return faux 
+    } 
+}
     
-    if (a == 8){
-        break;
-    }
-if ( a== 7){
-    continue
-}
-
-}
-
+console.log(result)
