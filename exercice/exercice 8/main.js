@@ -16,7 +16,7 @@ class pokemon{
 
 
 let darkrai = new pokemon("Darkray", 105, 90, 1700,0.5 )
-let giratina = new pokemon("Giratina", 1200,100,2500,0.1 )
+let giratina = new pokemon("Giratina", 120,100,2500,0.45)
 console.log(darkrai,giratina)
 
 
@@ -35,7 +35,8 @@ while(darkrai.hp >0 && giratina.hp > 0 ){
             console.log(darkrai.name+ " a raté son attaque")
         }
     if(giratina.hp <= 0){
-        console.log(giratina.name+ " est vancu ")
+        console.log(giratina.name+ " est vancu se qui fait que le vainceur est "+darkrai.name)
+
         break
     }
     if(Math.random()<giratina.isLuck){
@@ -50,7 +51,7 @@ while(darkrai.hp >0 && giratina.hp > 0 ){
     
    
     if(darkrai.hp <= 0 ){
-       console.log(darkrai.name+" est vancu")
+       console.log(darkrai.name+" est vancu se qui fait que le vainceur est "+ giratina.name)
         break
     }
 }   
