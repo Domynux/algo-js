@@ -8,10 +8,13 @@ class pokemon{
     }
 
     attackPokemon(pokemon) {
-         pokemon.hp -= pokemon.attack - pokemon.defense
-        }
+         let dmg = this.attack-pokemon.defense
+        if(dmg < 0) {
+         return
+        }else
+        pokemon.hp -= dmg
     }
-   
+}
 
 
 
