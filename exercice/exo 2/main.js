@@ -5,18 +5,30 @@ class killer{
     }
 }
 let jason = new killer ("Jason the killer", 100)
-nameSurvivor = [ "Dr. dre","Cooler","Freezer", "Dimitri","Jean-Heude","Jean-luc"]
-function names(nameSurvivor){
-    var triage = nameSurvivor[Math.floor(Math.random()*nameSurvivor.length)]
-}
+
+let nameSurvivor = [ "Dr. dre","Cooler","Freezer", "Dimitri","Jean-Heude","Jean-luc"]
+
+
+    var tirage = nameSurvivor[Math.floor(Math.random()*nameSurvivor.length)]
+
     
 
 class survivor{
     constructor(name, lckDeath, lckDodgeHit, lckDeathHit){
-        this.name=
+        this.name=names
         this.lckdeath= lckDeath
         this.lckDodgeHit = lckDodgeHit
         this.lckDeathHit = lckDeathHit
     }
 }
-names(nameSurvivor)
+
+
+while(survivor==0 || jason.hp == 0){
+  
+    console.log(tirage+"est un survivent"  )
+    console.log(tirage+"est un survivent"  )
+    console.log(tirage+"est un survivent"  )
+    console.log(tirage+"est un survivent"  )
+break
+
+}
